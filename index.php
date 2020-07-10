@@ -5,7 +5,6 @@
  * And render current view based on the URL request
  */
 
-require_once 'model/model.router.php';
+require_once 'controller/controller.router.php';
 
 $router = new Router();
-$router->renderView();
