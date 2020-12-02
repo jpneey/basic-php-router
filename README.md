@@ -3,7 +3,7 @@
 
 ## How
 All requests are redirected to `index.php` with the help of the `.htaccess`.<br>
-The `controller/controller.router.php` will render the current page(based on the first value of `$_SERVER["QUERY_STRING"]`) and if it is not available inside the `page\*.php` folder, `page\404.php` will be rendered instead. 
+The `controller/controller.router.php` will render the current page(based on the first value of `$_SERVER["QUERY_STRING"]`).
 
 ## Troubleshooting
 Should something went wrong, please check if the included `.htaccess` file actually exists and `mod_rewrite` is available.<br> 
