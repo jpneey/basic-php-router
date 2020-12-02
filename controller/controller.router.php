@@ -4,6 +4,10 @@ class Router {
 
     private $request;
 
+    /**
+     * Get the requested page
+     *
+     */
     public function requestPage()
     {
         $page = '404';
@@ -14,6 +18,11 @@ class Router {
         $this->request = $page;
         return $this;
     }
+
+    /**
+     * Render the requested page
+     * 
+     */
 
     public function renderPage()
     {
