@@ -32,6 +32,10 @@ class Router {
                 $pageTitle = "Home Page";
                 require_once "page/home.php";        
                 break;
+            case "about":
+                $pageTitle = "about Page";
+                require_once "page/about.php";        
+                break;
             default:
                 require_once "page/404.php";        
         }
