@@ -8,15 +8,13 @@ class Router {
      * Get the requested page
      *
      */
-    public function requestPage()
-    {
+    public function __construct(){
         $page = '404';
         if(isset($_SERVER["QUERY_STRING"])) {
             $uri = explode("/", $_SERVER["QUERY_STRING"]);
-            $page = isset($uri[0]) && !empty($uri[0]) ? $uri[0] : 'home';
+            $page = isset($uri[BASE_ROUTE]) && !empty($uri[BASE_ROUTE]) ? $uri[BASE_ROUTE] : 'home';
         }
         $this->request = $page;
-        return $this;
     }
 
     /**
@@ -24,7 +22,7 @@ class Router {
      * 
      */
 
-    public function renderPage()
+    public function init()
     {
         require_once 'include/include.import.php';
         switch(strtolower($this->request)) {

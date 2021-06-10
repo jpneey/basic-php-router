@@ -22,8 +22,8 @@
         <div class="col">
             <div class="d-block position-relative p-5 text-start shadow bg-white">
                 <p>Try the following links: </p>
-                <a href="http://localhost/basic-php-router/home/" class="btn btn-sm btn-primary px-4 py-2 mb-2 me-1">Home Page</a>
-                <a href="http://localhost/basic-php-router/about/" class="btn btn-sm btn-primary px-4 py-2 mb-2 me-1">About Page</a>
-                <a href="http://localhost/basic-php-router/a-404-page-or-somethin-random/" class="btn btn-sm btn-primary px-4 py-2 mb-2 me-1">A 404 Page</a>
+                <a href="<?= BASE_DIR ?>home/" class="btn btn-sm btn-primary px-4 py-2 mb-2 me-1">Home Page</a>
+                <a href="<?= BASE_DIR ?>about/" class="btn btn-sm btn-primary px-4 py-2 mb-2 me-1">About Page</a>
+                <a href="<?= BASE_DIR ?>a-404-page-or-somethin-random/" class="btn btn-sm btn-primary px-4 py-2 mb-2 me-1">A 404 Page</a>
             </div>
         </div>
