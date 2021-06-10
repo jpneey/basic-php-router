@@ -9,8 +9,8 @@ The `controller/controller.router.php` will render the current page(based on the
 [See it live](https://php-router.herokuapp.com/)
 
 ## Troubleshooting
-Should something went wrong, please check if the included `.htaccess` file actually exists and `mod_rewrite` is available.<br> 
-The `.htaccess` should also be updated accordingly if you are not using `apache` and using other kind of webservers such as `nginx`.
+Should something went wrong, please check if all traffic is really being redirected to `index.php`.<br>
+Please see the configuration section below on how you can do this on `apache` or `nginx`.
 
 ## Configuration - Constants
 It is advised to define the `BASE_URL` of your project from the `config.php` wether it is `http://example.com/` or
