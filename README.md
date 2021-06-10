@@ -25,7 +25,7 @@ For example, a project to be deployed on `http://example.com/` can have the defa
 `http://example.com/subfolder/another/` -> BASE_ROUTE = 2
 ``` 
 
-## Configureation - Server
+## Configuration - Server
 If you are using `apache`, traffic must be redirected to a single entry point. In this case, the `index.php`.
 You can do that by adding an `.htaccess` file:
 ```
