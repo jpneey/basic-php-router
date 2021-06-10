@@ -12,20 +12,22 @@ The `controller/controller.router.php` will render the current page(based on the
 Should something went wrong, please check if all traffic is really being redirected to `index.php`.<br>
 Please see the configuration section below on how you can do this on `apache` or `nginx`.
 
-## Configuration - Constants
+## Configuration
+
+### Constants
 It is advised to define the `BASE_URL` of your project from the `config.php` wether it is `http://example.com/` or
 `http://example.com/subfolder/`.
 
 The `BASE_ROUTE` constant is also required to be configured if your project's root directory is a subfolder.
 For example, a project to be deployed on `http://example.com/` can have the default `BASE_ROUTE` which is `0`.
-
-### Example:
 ```
+`http://example.com/` -> BASE_ROUTE = 0
 `http://example.com/subfolder/` -> BASE_ROUTE = 1 
 `http://example.com/subfolder/another/` -> BASE_ROUTE = 2
 ``` 
 
-## Configuration - Server
+### Server
+#### Apache
 If you are using `apache`, traffic must be redirected to a single entry point. In this case, the `index.php`.
 You can do that by adding an `.htaccess` file:
 ```
@@ -41,6 +43,7 @@ RewriteRule ^(.*)$ index.php?$1 [L,QSA]
 
 Options -Indexes
 ```
+#### Nginx
 If you are using `nginx`, you can add this on your site configuration file:
 ```
 location / {
