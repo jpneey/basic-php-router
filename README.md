@@ -51,6 +51,10 @@ location / {
 }
 ```
 
+#### Xampp - Apache
+On xampp, you can just update the `BASE_DIR` constant to `http://localhost/your-project-folder/`. The default `.htaccess` will work<br>
+for you. You can also retain the `BASE_ROUTE` to `0`.
+
 ## Requirements
 Nothing special, just your server running on `PHP v5^` (apache prefered) and `mod_rewrite` enabled.
 
