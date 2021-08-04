@@ -1,6 +1,8 @@
 # Basic PHP - Router
 > Nothing less, nothing more - A Simple, direct and yet efficient router for the LAMP stack.
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=D6ZRENKB3CZBQ)
+
 ## How
 All requests are redirected to `index.php` with the help of the `.htaccess`.<br>
 The `controller/controller.router.php` will render the current page(based on the first value of `$_SERVER["QUERY_STRING"]`).
